@@ -33,4 +33,26 @@ function playRound(userChoice, computerChoice) {
     // console.log(computerScore);
 }
 
+function playGame() {
+    for (let i=0; i<5; i++){
+        const userSelection = getUserChoice();
+        const computerSelection = getComputerChoice();
+        playRound(userSelection, computerSelection);
+    }
 
+    console.log(`USER SCORE: ${userScore}`);
+    console.log(`COMPUTER SCORE: ${computerScore}`);
+
+    if(userScore === computerScore) {
+        alert("The game tied!");
+        console.log("The game tied!")
+    }else if(userScore > computerScore){
+        alert("User wins the Game!");
+        console.log("User wins the Game!");
+    }else{
+        alert("Computer wins the Game!");
+        console.log("Computer wins the Game!");
+    }
+}
+
+playGame();
