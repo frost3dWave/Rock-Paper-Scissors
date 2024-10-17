@@ -1,0 +1,102 @@
+:root{
+    --clr-bg: #020617;
+    --clr-heading: #ca8a04;
+    --clr-button: #facc15;
+    --clr-highLevelText: #fb923c;
+    --clr_textLight: #fdba74;
+    --clr-contentText: wheat;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: var(--clr-bg);
+    max-width: 90%;
+    margin-inline: auto;
+    text-align: center;
+    color: var(--clr-contentText);
+}
+
+/* .contain{
+    border: 1px solid salmon;
+} */
+
+.title{
+    
+    color: var(--clr-heading);
+    margin: 1.5rem;
+}
+
+.description p{
+    font-size: 1.5rem;
+    margin: 1.5rem;
+}
+
+.description p:first-child{
+    color: var(--clr-highLevelText);
+}
+
+.description p:last-child{
+    color: var(--clr_textLight);
+}
+
+.choices{
+    margin: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 50px;
+}
+
+button{
+    background-color: var(--clr-button);
+    height: 30px;
+    width: 75px;
+    padding: 5px;
+}
+
+.scorecard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    height: 125px;
+    margin: 1.5rem;
+}
+
+.user,
+.computer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.score{
+    height: 50px;
+    width: 100px;
+    border: 1px solid var(--clr-contentText);
+}
+
+.results{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 180px;
+    margin: 1.5rem;
+}
+
+.results_board{
+    height: 100px;
+    width: 200px;
+    border: 1px solid var(--clr-contentText);
+}
