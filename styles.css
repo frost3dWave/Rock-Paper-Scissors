@@ -5,6 +5,8 @@
     --clr-highLevelText: #fb923c;
     --clr_textLight: #fdba74;
     --clr-contentText: wheat;
+    --clr-disabled: #475569;
+    --clr-disabledText: #f8fafc;
 }
 
 *,
@@ -27,7 +29,6 @@ body{
 } */
 
 .title{
-    
     color: var(--clr-heading);
     margin: 1.5rem;
 }
@@ -56,9 +57,19 @@ body{
 
 button{
     background-color: var(--clr-button);
-    height: 30px;
-    width: 75px;
+    font-size: 1rem;
+    height: 40px;
+    width: 80px;
     padding: 5px;
+}
+
+button:active{
+    transform: scale(0.9);
+}
+
+.button_disabled{
+    background-color: var(--clr-disabled);
+    color: var(--clr-disabledText);
 }
 
 .scorecard{
@@ -68,6 +79,7 @@ button{
     gap: 25px;
     height: 125px;
     margin: 1.5rem;
+    padding-inline: 10px;
 }
 
 .user,
@@ -76,13 +88,17 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
 }
 
-.score{
+.userScoreCard,
+.computerScoreCard{
     height: 50px;
     width: 100px;
     border: 1px solid var(--clr-contentText);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .results{
@@ -90,13 +106,31 @@ button{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 15px;
     height: 180px;
     margin: 1.5rem;
 }
 
 .results_board{
+    max-width: 90%;
     height: 100px;
     width: 200px;
     border: 1px solid var(--clr-contentText);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.active{
+    transform: scale(0.9);
+}
+
+.reload{
+    width: 150px;
+    height: 50px;
+    background-color: var(--clr-button);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
