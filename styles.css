@@ -24,10 +24,6 @@ body{
     color: var(--clr-contentText);
 }
 
-/* .contain{
-    border: 1px solid salmon;
-} */
-
 .title{
     color: var(--clr-heading);
     margin: 1.5rem;
@@ -52,7 +48,6 @@ body{
     align-items: center;
     justify-content: center;
     gap: 5px;
-    height: 50px;
 }
 
 button{
@@ -111,6 +106,10 @@ button:active{
     margin: 1.5rem;
 }
 
+.results p{
+    font-size: 1.2rem;
+}
+
 .results_board{
     max-width: 90%;
     height: 100px;
@@ -126,11 +125,182 @@ div.active{
 }
 
 .reload{
+    cursor: pointer;
     width: 150px;
-    height: 50px;
+    height: 40px;
     background-color: var(--clr-button);
     color: black;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* xs */
+@media (min-width: 475px) {
+    .description p{
+        font-size: 1.8rem;
+        margin: 1.8rem;
+    }
+    .choices{
+        margin: 1.8rem;
+        gap: 10px;
+    }
+    button{
+        font-size: 1.2rem;
+        height: 48px;
+        width: 96px;
+        padding: 6px;
+    }
+    .scorecard{
+        gap: 30px;
+        height: 150px;
+        margin: 1.8rem;
+        padding-inline: 12px;
+    }
+    .user,
+    .computer{
+        gap: 12px;
+        font-size: 1.2rem;
+    }
+    .userScoreCard,
+    .computerScoreCard{
+        height: 60px;
+        width: 120px;
+    }
+    .results{
+        gap: 18px;
+        height: 216px;
+        font-size: 1.2rem;
+        margin: 1.8rem;
+        padding-block: 1.2rem;
+    }
+    .results_board{
+        height: 120px;
+        width: 240px;
+    }
+    .reload{
+        width: 180px;
+        height: 60px;
+    }
+}
+/* sm  */
+@media (min-width: 640px) {
+    .results{
+        font-size: 1.4rem;
+    }
+    .results_board{
+        height: 144px;
+        width: 288px;
+    }
+    .reload{
+        width: 215px;
+        height: 72px;
+    }
+}
+/* md */
+@media (min-width: 768px) {
+    .title{
+        font-size: 2.4rem;
+    }
+    .description p{
+        font-size: 2.15rem;
+        margin: 2.15rem;
+    }
+    .choices{
+        margin: 2.15rem;
+        gap: 12px;
+    }
+    button{
+        font-size: 1.35rem;
+        height: 50px;
+        width: 100px;
+        padding: 7.2px;
+    }
+    .scorecard{
+        gap: 35px;
+        height: 180px;
+        margin: 2.15rem;
+        padding-inline: 15px;
+    }
+    .user,
+    .computer{
+        gap: 15px;
+        font-size: 1.35rem;
+    }
+    .userScoreCard,
+    .computerScoreCard{
+        height: 60px;
+        width: 120px;
+    }
+    .results{
+        height: 230px;
+        gap: 20px;
+    }
+    .results p{
+        font-size: 1.5rem;
+    }
+    .results_board{
+        font-size: 1.5rem;
+        height: 170px;
+        width: 340px;
+        padding: 10px;
+    }
+    .reload{
+        width: 240px;
+        height: 120px;
+    }
+}
+/* lg */
+@media (min-width: 1024px) {
+    .title{
+        font-size: 2.9rem;
+    }
+    .description p{
+        font-size: 2.5rem;
+        margin: 2.5rem;
+    }
+    .choices{
+        margin: 2.5rem;
+        gap: 15px;
+    }
+    button{
+        font-size: 1.6rem;
+        height: 60px;
+        width: 120px;
+        padding: 8.65px;
+    }
+    .scorecard{
+        gap: 40px;
+        height: 215px;
+        margin: 2.5rem;
+        padding-inline: 18px;
+    }
+    .user,
+    .computer{
+        gap: 18px;
+        font-size: 1.8rem;
+    }
+    .userScoreCard,
+    .computerScoreCard{
+        height: 72px;
+        width: 144px;
+    }
+    .results{
+        height: 260px;
+    }
+    .results p{
+        font-size: 1.8rem;
+    }
+    .results_board{
+        font-size: 1.8rem;
+        height: 200px;
+        width: 400px;
+        padding: 12px;
+    }
+    .reload{
+        font-size: 1.5rem;
+        width: 260px;
+        height: 130px;
+        
+    }
 }
