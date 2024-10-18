@@ -25,8 +25,6 @@ function getUserChoice(e) {
 }
 
 function playRound(userSelection, computerSelection) {
-    // console.log(`user:${userSelection}`);
-    // console.log(`computer:${computerSelection}`);
     if (userSelection === computerSelection) {
         resultsBoard.textContent = `It's a tie!`;
     }else if((userSelection === "rock" && computerSelection === "scissors") || (userSelection === "paper" && computerSelection === "rock") || (userSelection === "scissors" && computerSelection === "paper")) {
@@ -38,8 +36,6 @@ function playRound(userSelection, computerSelection) {
         computerScoreCard.textContent = computerScore;
         resultsBoard.textContent = `Computer wins the round!\n${computerSelection} beats ${userSelection}!`;
     }
-    // console.log(userScore);
-    // console.log(computerScore);
     checkWinner(userScore, computerScore);
 }
 
